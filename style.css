@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Overpass&family=Poppins:wght@200;400;500;600;700&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+
+  /* ### Accent */
+
+  --Blue: hsl(248, 32%, 49%);
+
+  /* ### Neutral */
+
+  --DarkBlue: hsl(249, 10%, 26%);
+  --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: var(--Red);
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: Poppins;
+}
+.general-wrapper {
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.wrapper-text {
+  width: 500px;
+  margin: 50px;
+  color: white;
+}
+.wrapper-text .title p {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.wrapper-form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-form .try-it {
+  background-color: var(--Blue);
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.507);
+}
+.wrapper-form .try-it span {
+  font-weight: 700;
+}
+
+.wrapper-form .form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.507);
+}
+.wrapper-form .form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--GrayishBlue);
+}
+
+.empty-1,
+.empty-2,
+.empty-3,
+.empty-4 {
+  position: relative;
+  color: var(--Red);
+  margin-left: 190px;
+  top: -30px;
+  display: none;
+}
+
+.wrapper-form .form button {
+  border: none;
+  background-color: var(--Green);
+  padding: 15px 0;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wrapper-form .form p {
+  font-size: 0.5625rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.wrapper-form .form span {
+  color: var(--Red);
+  font-weight: 700;
+}
+@media screen and (max-width: 900px) {
+  .general-wrapper {
+    flex-direction: column;
+  }
+  .wrapper-text {
+    width: 300px;
+    text-align: center;
+  }
+  .wrapper-form {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  .empty-1,
+  .empty-2,
+  .empty-3,
+  .empty-4 {
+    margin-left: 55px;
+  }
+}
